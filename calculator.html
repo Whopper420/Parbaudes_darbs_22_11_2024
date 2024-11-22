@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="number1" />
+    <input type="text" id="refrence" />
+    <input type="text" id="number2" />
+    <button id="btn">Rēķināt</button>
+    <script>
+      let num1 = document.getElementById("number1").value;
+      let num2 = document.getElementById("number2").value;
+      let ref = document.getElementById("refrence");
+      let btn = document.getElementById("btn");
+
+      function math() {
+        if (ref == "=") {
+          innerHTML[num1 + num2];
+        } else if (ref == "-") {
+          innerHTML[num1 - num2];
+        } else if (ref == "*") {
+          innerHTML[num1 * num2];
+        } else if (ref == "/") {
+          innerHTML[num1 / num2];
+        } else {
+          innerHTML["nepareizs"];
+        }
+      }
+
+      btn.addEventListener("click", math);
+    </script>
+  </body>
+</html>
